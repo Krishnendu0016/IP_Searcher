@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="images/x-icon" href="./ip-address-icon-isolated-dark-background-simple-vector-logo-225314740.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IP Address</title>
+</head>
+<body>
+    <h1>IP ADDRESS</h1>
+    <p id="ip-address"></p>
+    <p id="ip-data"></p>
+    <form id="search-form">
+        <label for="searcher">Search an IP address: </label>
+        <input id="search-bar" name="searcher" type="text" maxlength="50">
+        <button class=".find-btn" id="submit" type="submit">Search</button>
+    </form>
+
+    <p id="searched-ip"></p>
+
+    <footer>
+        <p class="foo">&copy; 2023  IP Searcher by Krishnendu <i style="font-size:20px" class="fa">&#xf004;</i>. All rights reserved.</p>
+    </footer>
+
+
+    <script type="application/javascript" src="script.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+
+</html>
